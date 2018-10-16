@@ -4,6 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta author='Mike' description='aloha-project1'>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>Aloha Apparel Co.</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
@@ -37,111 +38,108 @@
         <p class="season">Spring/Summer 2019</p>
     </div>
 </section>
+<a id="About"></a>
     <h3 class="center">
-        <a id="About"></a>
-        Hand-Crafted styles
+        Hand-Crafted 
+        <span class="styles">Styles</span>
     </h3>
-    <p class="center">
+    <p class="about">
         Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of
         products or sign-up for updates below.
     </p>
     <nav>
-        <div class="Shop">
-        <!-- <ul> -->
-            <div class="category-wide mens">
-                <!-- <span class="mens"> -->
-                    <!-- <img src="images/mens-category.jpg"> -->
-                    <div class="mens-text">
-            <a href="#">Men's</a>
-        </div>
-            <!-- </span> -->
-            </div>
-            <div class="category-square trends">
-                    <span class="trends">
-                        <img src="images/trends-category.jpg">
-           <a href="#">Trends</a>
-           </span>
-           </div>
-           <div class="category-square glasses">
-                <span class="glasses">
-                    <img src="images/glasses-category.jpg">
-            <a href="#">Glasses</a>
-            </span>
-            </div>
-            <div class="category-square sale">
-                    <span class="sale">
-                        <img src="images/sale-category.jpg">
-            <a href="#">Sale</a>
-            </span>
-            </div>
-            <div class="category-square bags">
-                    <span class="bags">
-                        <img src="images/bags-category.jpg">
-            <a href="#">Bag's</a>
-            </span>
-            </div>
-            <div class="category-wide womens">
-                    <span class="womens">
-                        <img src="images/womens-category.jpg">
-            <a href="#top">Women's</a>
-            </span>
-            </div>
-        <!-- </ul> -->
-        </div>
+            <a id="Shop"></a>
+            <div class="shop-categories">
+                <div class="category-wide mens">
+                    <span class="shop-text">
+                        <a href="#">Men's</a>
+                    </span>
+                </div>
+                <div class="category-square trends">
+                    <span class="shop-text">
+                        <a href="#">Trends</a>
+                    </span>
+                </div>
+                <div class="category-square glasses">
+                    <span class="shop-text">
+                        <a href="#">Glasses</a>
+                    </span>
+                </div>
+                <div class="category-square sale">
+                    <span class="shop-text">
+                        <a href="#">Sale</a>
+                    </span>
+                </div>
+                <div class="category-square bags">
+                    <span class="shop-text">
+                        <a href="#">Bags</a>
+                    </span>
+                </div>
+                <div class="category-wide womens">
+                    <span class="shop-text">
+                        <a href="#">Womens</a>
+                    </span>
+                </div>
+          </div>                         
     </nav>
-    <h2>
-        <a id="Featured"></a>
-        Most-Loved Products
-    </h2>
-    <div class="product-list">
-        <img src="images/stretch-knit-dress.jpg" alt="Image of stretch knit dress">
-        <p class="product-type">Dresses</p>
-        <h4>Stretch Knit Dress</h4>
-        <p class="price">169.00</p>
-        <img src="images/cotton-blue-shirt.jpg" alt="Image of Cotton blue shirt">
-        <p class="product-type">Shirts</p>
-        <h4>Cotton Blue Shirt</h4>
-        <p class="price">89.00</p>
-        <img src="images/checked-stretch-dress.jpg" alt="Image of Checked stretch Dress">
-        <p class="product-type">Dresses</p>
-        <h4>Checked Stretch Dress</h4>
-        <p class="price">129.00</p>
-        <img src="images/stretch-knit-dress.jpg" alt="Image of stretch knit dress">
-        <p class="product-type">Dresses</p>
-        <h4>Stretch Knit Dress</h4>
-        <p class="price">169.00</p>
-        <img src="images/blue-hipster-backpack.jpg" alt="Image of Blue hipster backack">
-        <p class="product-type">Backpacks</p>
-        <h4>Blue Hipster Backpack</h4>
-        <p class="price">69.00</p>
-        <img src="images/demin-overall-shorts.jpg" alt="Image of Denim overall shorts">
-        <p class="product-type">Shorts</p>
-        <h4>Denim Overall Shorts</h4>
-        <p class="price">89.00</p>
-        <img src="images/pink-dotted-dress.jpg" alt="Image of Pink dotted dress">
-        <p class="product-type">Dresses</p>
-        <h4>Pink Dotted Dress</h4>
-        <p class="price">99.00</p>
-        <img src="images/blue-silk-dress.jpg" alt="Image of Blue silk dress">
-        <p class="product-type">Dresses</p>
-        <h4>Blue Silk Dress</h4>
-        <p class="price">119.00</p>
-        <img src="images/cotton-yellow-tshirt.jpg" alt="Image of Cotton yellow shirt">
-        <p class="product-type">Shirts</p>
-        <h4>Cotton Yellow Shirt</h4>
-        <p class="price">39.00</p>
-    <div class="newsletter">
+    <section class="featured">
+        <div class="featured-container">
         <h2>
-        Sign-up for Updates
+        <a id="Featured"></a>
+        Most-Loved <span class="featured-products">Products</span>
+        </h2>
+        <!-- flickity -->
+            <div class="main-carousel">
+                    <div class="carousel-cell"><img src="images/stretch-knit-dress.jpg" alt="Image of stretch knit dress">
+                        <p class="product-type">Dresses</p>
+                        <h4>Stretch Knit Dress</h4>
+                        <p class="price">$169.00</p></div>
+                    <div class="carousel-cell"><img src="images/cotton-blue-shirt.jpg" alt="Image of Cotton blue shirt">
+                        <p class="product-type">Shirts</p>
+                        <h4>Cotton Blue Shirt</h4>
+                        <p class="price">$89.00</p></div>
+                    <div class="carousel-cell"><img src="images/checked-stretch-dress.jpg" alt="Image of Checked stretch Dress">
+                        <p class="product-type">Dresses</p>
+                        <h4>Checked Stretch Dress</h4>
+                        <p class="price">$129.00</p></div>
+                    <div class="carousel-cell"><img src="images/blue-hipster-backpack.jpg" alt="Image of Blue hipster backack">
+                        <p class="product-type">Bags</p>
+                        <h4>Blue Hipster Backpack</h4>
+                        <p class="price">$69.00</p></div>
+                    <div class="carousel-cell"><img src="images/demin-overall-shorts.jpg" alt="Image of Denim overall shorts">
+                        <p class="product-type">Shorts</p>
+                        <h4>Denim Overall Shorts</h4>
+                        <p class="price">$89.00</p></div>
+                    <div class="carousel-cell"><img src="images/pink-dotted-dress.jpg" alt="Image of Pink dotted dress">
+                        <p class="product-type">Dresses</p>
+                        <h4>Pink Dotted Dress</h4>
+                        <p class="price">$99.00</p></div>
+                    <div class="carousel-cell"><img src="images/blue-silk-dress.jpg" alt="Image of Blue silk dress">
+                        <p class="product-type">Dresses</p>
+                        <h4>Blue Silk Dress</h4>
+                        <p class="price">$119.00</p></div>
+                    <div class="carousel-cell"><img src="images/cotton-yellow-tshirt.jpg" alt="Image of Cotton yellow shirt">
+                        <p class="product-type">Shirts</p>
+                        <h4>Cotton Yellow Shirt</h4>
+                        <p class="price">$39.00</p></div>
+            </div>
+        </div>
+    </section>
+                  <!-- flickity-end -->
+    <div class="newsletter">
+            <a id="Updates"></a>
+        <div class="newswrap">
+        <h2 class="sign-up">
+        Sign-up for <span class="updates">Updates</span>
         </h2>
         <p class='newsletter-text'>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free
-            style tips from our blog. Unsubscribe any time.
+            style tips from our blog. Unsubscribe at any time.
         </p>
-        <p class='form'>
-                <form action="http://alohaapparel.com/subscribe.php"></form>
-                <input type="email" placeholder="Your Email">
-                <input type="submit" value="subscribe">
-            </p>
+                <form class="form" action="http://alohaapparel.com/subscribe.php">
+                    <input class="submit" type="email" placeholder="Your Email" />
+                <input class="subscribe" type="submit" value="Subscribe" />
+                </form>
+            </div>
     </div>
     <footer>
         <div class="footer">
@@ -168,20 +166,22 @@
             </p>
             </div>
         </section>
-        <ul class="social-icons">
-            <li class="social"><i class="fab fa-facebook-f"></i>
-            <a href="#top">&nbsp Facebook</a></li>
-            <li class="social"><i class="fab fa-twitter"></i>
-            <a href="#top">&nbsp Twitter</a></li>
-            <li class="social"><i class="fab fa-instagram"></i>
-            <a href="#top">&nbsp Instagram</a></li>
-            <li class="social"><i class="fab fa-pinterest"></i>
-            <a href="#top">&nbsp Pinterest</a></li>
-            <li class="social"><i class="fab fa-google-plus-g"></i>
-            <a href="#top">&nbsp Google+</a></li>
+        <ul class="social">
+            <li class="icon-Facebook"><i class="fab fa-facebook-f"></i>
+            <a href="#top">Facebook</a></li>
+            <li class="icon-twitter"><i class="fab fa-twitter"></i>
+            <a href="#top">Twitter</a></li>
+            <li class="icon-instagram"><i class="fab fa-instagram"></i>
+            <a href="#top">Instagram</a></li>
+            <li class="icon-pinterest"><i class="fab fa-pinterest"></i>
+            <a href="#top">Pinterest</a></li>
+            <li class="icon-google"><i class="fab fa-google-plus-g"></i>
+            <a href="#top">Google+</a></li>
         </ul>
-    </div>
     </footer>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
