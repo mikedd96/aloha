@@ -74,13 +74,13 @@
     box-sizing: border-box
 }
 
+
 html {
     font-size: 14px;
 }
 header {
     font-family: Raleway-Medium;
     flex-wrap: wrap;  
-    background-color: white;   
 }
 
 .container {
@@ -94,7 +94,6 @@ header {
     padding-right: 2%;
     line-height: 2;
     margin: 0 auto;
-    z-index: +10;
 }
 .logo {
     padding-bottom: 4px
