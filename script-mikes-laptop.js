@@ -47,9 +47,12 @@ $('a[href*="#"]')
       alert('Thanks for subscribing!');
     }
   });
-  $(function() {
-    $("a[href^='#']").not("a[href='#']").click(function() {
-       $("#"+$(this).attr("href").slice(1)+"").focus();
-    });
- });
 
+//fixed header
+window.onscroll = function() {fixedFunction()
+const header= document.getElementsByClassName('.container');
+const initialPosition = header
+function fixedFunction() {
+  if(window.pageYOffset > s)
+}
+}
