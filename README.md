@@ -1,4 +1,5 @@
 ALOHA APPAREL WEBSITE
+![screenshot](/aloha.PNG "inhabitent homepage screenshot")
 
 This is a website to advertise, show products, and allow online shopping for the company Aloha Apparel.
  The website was created using HTML, CSS, and Javascript/JQuery, Flicky, FontAwesome,

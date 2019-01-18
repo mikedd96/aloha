@@ -1,3 +1,4 @@
+$(document).ready(function() {
 // smoth scroll from css tricks
 $('a[href*="#"]')
 
@@ -52,4 +53,4 @@ $('a[href*="#"]')
        $("#"+$(this).attr("href").slice(1)+"").focus();
     });
  });
-
+});
